@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kana Board</title>
     <link rel="icon" type="image/png" href="img/iconimg.png" />
     <!--Bootstrap CSS-->
@@ -11,9 +12,9 @@
 </head>
 <body>
     <header>
-        <a class="brand text-center" href="#">Kana Board</a>       
+        <a class="brand text-center" href="#info">Kana<img id="brand-logo" src="img/brand-logo.png"></img> Board</a>       
     </header>
-    <nav class="navbar navbar-expand-lg bg-dark">
+    <nav class="navbar navbar-expand-md bg-dark">
         <button class="navbar-toggler navbar-dark ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -27,11 +28,11 @@
                         <a class="nav-link" id="hiraganaTab" href="#hiragana" data-toggle="tab" role="tab">Hiragana</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" id="katakanaTab" href="#katakana" data-toggle="tab" role="tab">Katakana</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" id="studyTab" href="#study" data-toggle="tab" role="tab">Study</a>
                     </li>
-                    <!--<li class="nav-item">
-                        <a class="nav-link" id="katakanaTab" href="#katakana" data-toggle="tab" role="tab">Katakana</a>
-                    </li>-->
                 </ul>
             </div>  
         </div>
@@ -60,7 +61,7 @@
         <div class="tab-pane fade container" id="hiragana" role="tabpanel" aria-labelledby="Hiragana-tab">
             <form>
                 <div class="instructions">Choose up to three groups of <strong>hiragana</strong>, then click<a type="submit" data-toggle="tab" href="#study" class="redBtn btn rounded btn-primary btn-sm ml-3" id="studyHiragana">Study</a></div>
-                <div class="row mt-5">
+                <div class="row d-none d-md-table-row">
                     <div class="col">
                         <input type="checkbox" class="form-check-input hCheckbox" id="aHiragana">
                     </div>
