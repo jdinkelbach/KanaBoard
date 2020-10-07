@@ -125,6 +125,29 @@ h2{
     box-shadow:         0px 0px 6px 0px rgba(50, 50, 50, 0.3);
 }
 
+.container-scroll{
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.container-scroll > .row > .col {
+    display: inline-block;
+    float: none;
+}
+
+.container-scroll > .row {
+    width: 300%;
+}
+
+.kana-character{
+    font-size: 1rem;
+}
+
+.romaji{
+    color: gray;
+    font-size: .5em;
+}
+
 /* Large devices (laptops/desktops, 768px and up) */
 @media only screen and (min-width: 768px) {
     
@@ -206,6 +229,35 @@ h2{
         line-height: 4rem;
         padding: 2%;
     }
+
+    .row{
+        min-height: 2%;
+    }
+    
+    .kana-cell > .romaji{
+        padding-bottom: 2em;
+    }
+    
+    .col{
+        border-left: 1px lightgray solid;
+        line-height: 1;
+    }
+    
+    .col:nth-child(1){
+        border-left: none;
+    }
+
+    .kana-character{
+        font-size: 1.5rem;
+    }
+
+    .container-scroll{
+        overflow: hidden;
+    }
+    
+    .container-scroll > .row {
+        width: auto;
+    }
 }
 
 .redBtn{
@@ -220,37 +272,10 @@ h2{
     margin: 0 .5rem;
 }
 
-.row{
-    min-height: 2%;
-}
-
 .studyBtn:hover{
     background-color: white;
     color: #b0313f;
     border-color:  #b0313f;
-}
-
-
-.kana-character{
-    font-size: 1.5em;
-}
-
-.kana-cell > .romaji{
-    padding-bottom: 2em;
-}
-
-.romaji{
-    color: gray;
-    font-size: .5em;
-}
-
-.col{
-    border-left: 1px lightgray solid;
-    line-height: 1;
-}
-
-.col:nth-child(1){
-    border-left: none;
 }
 
 .form-check-input{
