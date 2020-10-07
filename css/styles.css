@@ -23,8 +23,7 @@
 }
 
 header{
-    background: #b0313f;
-    width: 100%;
+    display: none;
 }
 
 body {
@@ -34,12 +33,13 @@ body {
 }
 
 .brand {
+    white-space: nowrap;
+    margin: auto;
     font-family: 'Roboto Mono', monospace;
-    padding: 2.5%;
+    padding: 4% 0;
     letter-spacing: .3rem;
-    display: block;
+    display: inline;
     font-size: 2rem;
-    margin-bottom: -1%;
     text-transform: uppercase;
     font-weight: 700;
     color: white;
@@ -48,7 +48,7 @@ body {
 #brand-logo{
     height: 30px;
     padding-left: 5%;
-    margin-bottom: 2%;
+    margin-bottom: 3%;
 }
 
 .brand:hover{
@@ -65,13 +65,14 @@ body {
 }
 
 .navbar{
+    background-color: #b0313f;
     width: 100%;
     margin: 0;
     padding: 0;
 }
 
 .nav-tabs{
-    display: block;
+    background-color: #343a40;
     width: 100%;
     border: none;
 }
@@ -81,6 +82,7 @@ body {
 }
 
 .nav-link{
+    padding: .5rem;
     width: 100%;
     font-family: 'Roboto Mono', monospace;
     text-transform: uppercase;
@@ -88,6 +90,7 @@ body {
     color: white;
     display: block;
     letter-spacing: .1rem;
+    font-size: large;
 }
 
 .show > .container {
@@ -124,6 +127,7 @@ h2{
 
 /* Large devices (laptops/desktops, 768px and up) */
 @media only screen and (min-width: 768px) {
+    
     body{
         background-color: whitesmoke;
     }
@@ -146,38 +150,42 @@ h2{
     }
 
     .brand {
-        font-family: 'Roboto Mono', monospace;
-        letter-spacing: .1rem;
-        padding: 2.5rem 0 1.5rem 0;
+        letter-spacing: 5;
         display: block;
+        white-space: normal;
         font-size: 3rem;
-        margin-bottom: -1%;
-        text-transform: uppercase;
-        font-weight: 700;
-        color: white;
+        padding: 1.5%;
     }
 
-    #brand-logo{
-        display: none;
+    .navbar{
+        background-color: #343a40;
     }
 
     .nav-item{
-        display: inline;
-        padding: 0 5%;
+        margin: auto;
+
+    }
+
+    #mobile-nav{
+        display: none!important;
     }
 
     .nav-tabs{
         padding: .8%;
-        width: 100%;
-        text-align: center;
+        width: 100%
     }
 
     .nav-link{
         display: inline;
-        font-size: large;
         border-radius: 10%;
         padding: .3rem;
         border-radius: 10%;
+    }
+
+    .nav-link:hover{
+        background-color: whitesmoke;
+        color:  #b0313f!important;
+        border: none;
     }
 
     .nav-link.active{
@@ -315,10 +323,4 @@ h2{
     background-image: none;
     box-shadow: none;
     transition-delay: .5s;
-}
-
-.nav-link:hover{
-    background-color: whitesmoke;
-    color:  #b0313f!important;
-    border: none;
 }

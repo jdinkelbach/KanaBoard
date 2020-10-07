@@ -12,12 +12,15 @@
 </head>
 <body>
     <header>
-        <a class="brand text-center" href="#info">Kana<img id="brand-logo" src="img/brand-logo.png"></img> Board</a>       
+        <a class="brand text-center" href="#info">Kana Board</a>       
     </header>
-    <nav class="navbar navbar-expand-md bg-dark">
-        <button class="navbar-toggler navbar-dark ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    <nav class="navbar navbar-expand-md">
+        <div id="mobile-nav" class="container">
+            <a class="brand text-center" href="#info">Kana<img id="brand-logo" src="img/brand-logo.png"></img> Board</a>
+            <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <div class="container justify-content-center">
                 <ul class="navbar-nav nav-tabs">
@@ -61,7 +64,7 @@
         <div class="tab-pane fade container" id="hiragana" role="tabpanel" aria-labelledby="Hiragana-tab">
             <form>
                 <div class="instructions">Choose up to three groups of <strong>hiragana</strong>, then click<a type="submit" data-toggle="tab" href="#study" class="redBtn btn rounded btn-primary btn-sm ml-3" id="studyHiragana">Study</a></div>
-                <div class="row d-none d-md-table-row">
+                <div class="row">
                     <div class="col">
                         <input type="checkbox" class="form-check-input hCheckbox" id="aHiragana">
                     </div>
