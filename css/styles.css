@@ -128,7 +128,7 @@ h2{
 .container-scroll{
     overflow-x: auto;
     white-space: nowrap;
-   padding: 10% 0;
+    padding: 4rem 0;
 }
 
 .container-scroll > .row > .col {
@@ -166,7 +166,6 @@ h2{
     }
     
     .card-container{
-        padding-bottom: 4%;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         gap: 20px 20px;
@@ -285,7 +284,7 @@ h2{
 }
 
 #info{
-    padding: 1%;
+    padding: 2.5% 1%;
 }
 
 #score{
@@ -296,11 +295,13 @@ h2{
 #playInfo{
     display: block;
     text-align: center;
-    height: 2rem;
+    height: 3rem;
+    padding-top: .5rem;
+    margin-bottom: .5rem;
 }
 
 #againBtn{
-    margin: 20% 0 10%;
+    margin: 15% 0 5%;
 }
 
 .card {

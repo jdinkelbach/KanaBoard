@@ -21,9 +21,27 @@ var waHiragana =    ['wa', 'わ',  'o', 'を']
 var nHiragana =     ['n', 'ん']
 var gaHiragana =    ['ga', 'が', 'gi', 'ぎ', 'gu', 'ぐ', 'ge', 'げ', 'go', 'ご']
 var zaHiragana =    ['za', 'ざ', 'ji', 'じ', 'zu', 'ず', 'ze', 'ぜ', 'zo', 'ぞ']
-var daHiragana =    ['da', 'だ', 'ji', 'ぢ', 'zu', 'づ', 'ze', 'で', 'zo', 'ど']
+var daHiragana =    ['da', 'だ', 'ji', 'ぢ', 'du', 'づ', 'de', 'で', 'do', 'ど']
 var baHiragana =    ['ba', 'ば', 'bi', 'び', 'bu', 'ぶ', 'be', 'べ', 'bo', 'ぼ']
 var paHiragana =    ['pa', 'ぱ', 'pi', 'ぴ', 'pu', 'ぷ', 'pe', 'ぺ', 'po', 'ぽ']
+
+// Initializes objects containing hiragana and associated romaji
+var aKatakana =     ['a', 'ア', 'i', 'イ', 'u', 'ウ', 'e', 'エ', 'o', 'オ']
+var kaKatakana =    ['ka', 'カ', 'ki', 'キ', 'ku', 'ク', 'ke', 'ケ', 'ko', 'コ']
+var saKatakana =    ['sa', 'サ', 'shi', 'シ', 'su', 'ス', 'se', 'セ', 'so', 'ソ']
+var taKatakana =    ['ta', 'タ', 'chi', 'チ', 'tsu', 'ツ', 'te', 'テ', 'to', 'ト']
+var naKatakana =    ['na', 'ナ', 'ni', 'ニ', 'nu', 'ヌ', 'ne', 'ネ', 'no', 'ノ'];
+var haKatakana =    ['ha', 'ハ', 'hi', 'ヒ', 'fu', 'フ', 'he', 'ヘ', 'ho', 'ホ']
+var maKatakana =    ['ma', 'マ', 'mi', 'ミ', 'mu', 'ム', 'me', 'メ', 'mo', 'モ']
+var yaKatakana =    ['ya', 'ヤ', 'yu', 'ユ', 'yo', 'ヨ']
+var raKatakana =    ['ra', 'ラ', 'ri', 'リ', 'ru', 'ル', 're', 'レ', 'ro', 'ロ']
+var waKatakana =    ['wa', 'ワ',  'o', 'ヲ']
+var nKatakana =     ['n', 'ン']
+var gaKatakana =    ['ga', 'ガ', 'gi', 'ギ', 'gu', 'グ', 'ge', 'ゲ', 'go', 'ゴ']
+var zaKatakana =    ['za', 'ザ', 'ji', 'ジ', 'zu', 'ズ', 'ze', 'ゼ', 'zo', 'ゾ']
+var daKatakana =    ['da', 'ダ', 'ji', 'ヂ', 'du', 'ヅ', 'de', 'デ', 'do', 'ド']
+var baKatakana =    ['ba', 'バ', 'bi', 'ビ', 'bu', 'ブ', 'be', 'ベ', 'bo', 'ボ']
+var paKatakana =    ['pa', 'パ', 'pi', 'ピ', 'pu', 'プ', 'pe', 'ペ', 'po', 'ポ']
 
 // Setup "click" Listeners
 // Info Page - "Hiragana" Button
@@ -55,6 +73,18 @@ $("#studyHiragana").click(function(){
     $('#studyTab').addClass("active");
     kana = [];
     checkHiragana();
+    console.log(kana);
+    console.log(kana.length);
+    resetBoard();
+});
+
+// Katakana Page - "Submit" Button
+$("#studyKatakana").click(function(){
+    // Change active tab
+    $('#katakanaTab').removeClass("active");
+    $('#studyTab').addClass("active");
+    kana = [];
+    checkKatakana();
     console.log(kana);
     console.log(kana.length);
     resetBoard();
@@ -128,11 +158,71 @@ function checkHiragana(){
             case "zaHiragana":
                 pushElements(zaHiragana);
                 break;
+            case "daHiragana":
+                pushElements(daHiragana);
+                break;
             case "baHiragana":
                 pushElements(baHiragana);
                 break;
             case "paHiragana":
                 pushElements(paHiragana);
+                break;
+        }
+    });
+}
+
+// Adds selected hiragana
+function checkKatakana(){
+    $(".kCheckbox:checked").each(function(i){
+        // Add chosen kana labels to array
+        switch($(this).attr('id')){
+            case "aKatakana":
+                pushElements(aKatakana);
+                break;
+            case "kaKatakana":
+                pushElements(kaKatakana);
+                break;
+            case "saKatakana":
+                pushElements(saKatakana);
+                break;
+            case "taKatakana":
+                pushElements(taKatakana);
+                break;
+            case "naKatakana":
+                pushElements(naKatakana);
+                break;
+            case "haKatakana":
+                pushElements(haKatakana);
+                break;
+            case "maKatakana":
+                pushElements(maKatakana);
+                break;
+            case "yaKatakana":
+                pushElements(yaKatakana);
+                break;
+            case "raKatakana":
+                pushElements(raKatakana);
+                break;
+            case "waKatakana":
+                pushElements(waKatakana);
+                break;
+            case "nKatakana":
+                pushElements(nKatakana);
+                break;
+            case "gaKatakana":
+                pushElements(gaKatakana);
+                break;
+            case "zaKatakana":
+                pushElements(zaKatakana);
+                break;
+            case "daKatakana":
+                pushElements(daKatakana);
+                break;
+            case "baKatakana":
+                pushElements(baKatakana);
+                break;
+            case "paKatakana":
+                pushElements(paKatakana);
                 break;
         }
     });
