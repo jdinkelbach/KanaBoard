@@ -294,7 +294,7 @@ function hideCards(){
 // Remove cards that have been successfully matched
 function removeCards(arr) {
     for (var i = 0; i < arr.length; i++) {
-        arr[i].classList.add("removed");
+        arr[i].classList.add("removed"); 
     }
 }
 
