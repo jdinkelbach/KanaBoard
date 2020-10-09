@@ -287,7 +287,7 @@ function revealCard(card){
 // Hides the values of all cards on the board
 function hideCards(){
     for (var i = 0; i < cards.length; i++) {
-        cards[i].classList.add("cardBack");
+        cards[i].classList.add("cardBack"); 
     }
 }
 
