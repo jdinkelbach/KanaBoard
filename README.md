@@ -8,7 +8,7 @@
   <li><a href="#contact">Contact</a></li>
   </ul>
 <h1 id="about">About The Project</h1>
-<p>This project is a web memory game for users to use to study the pronunciation of Hiragana and Katakana (Japanese alphabets).<p>
+<p>This project is a web memory game for users to study the pronunciation of Hiragana and Katakana (Japanese alphabets).<p>
 <h1 id="tools">Built With</h1>
   <ul>
     <li>HTML</li>
