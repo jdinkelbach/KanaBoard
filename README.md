@@ -1,6 +1,6 @@
 # KanaBoard
-
-<h1>Table of Contents</h1>
+<p><a href="url"><img src="https://github.com/jdinkelbach/KanaBoard/blob/master/img/KanaBoardScreenshot.JPG" height="500" width="600" ></a></img>
+<h1>Table of Contents</p>
   <ul>
   <li><a href="#about">About The Project</a></li>
   <li><a href="#tools">Built With</a></li>
