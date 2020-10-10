@@ -18,8 +18,8 @@
     <li>jQuery</li>
     <li>Photoshop CS6</li>
   </ul>
- <h1 id="demo">Demo<h1>
+ <h1 id="demo">Demo</h1>
    <p>Click <a href="https://jdinkelbach.github.io/KanaBoard/">here</a> to see this project in action.</p>
- <h1 id="contact">Contact<h1>
+ <h1 id="contact">Contact</h1>
    <p>Justin Dinkelbach - <a href="https://www.linkedin.com/in/justin-dinkelbach/">LinkedIn</a> - <a href="mailto:jmdinkelbach@gmail.com">jmdinkelbach@gmail.com</a><p>
    <p>Project Link: <a href="https://github.com/jdinkelbach/KanaBoard">https://github.com/jdinkelbach/KanaBoard</a>
