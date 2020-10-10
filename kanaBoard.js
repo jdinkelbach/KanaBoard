@@ -7,7 +7,7 @@ var maxSelect = 3;      // Max amnt of checkboxes that can be selected
 var kana = ['a', 'あ', 'i', 'い', 'u', 'う', 'e', 'え', 'o', 'お']
 var studyTab = $('#studyTab');
 
-// Initializes objects containing hiragana and associated romaji
+// Initializes lists containing hiragana and associated romaji
 var aHiragana =     ['a', 'あ', 'i', 'い', 'u', 'う', 'e', 'え', 'o', 'お']
 var kaHiragana =    ['ka', 'か', 'ki', 'き', 'ku', 'く', 'ke', 'け', 'ko', 'こ']
 var saHiragana =    ['sa', 'さ', 'shi', 'し', 'su', 'す', 'se', 'せ', 'so', 'そ']
@@ -25,7 +25,7 @@ var daHiragana =    ['da', 'だ', 'ji', 'ぢ', 'du', 'づ', 'de', 'で', 'do', '
 var baHiragana =    ['ba', 'ば', 'bi', 'び', 'bu', 'ぶ', 'be', 'べ', 'bo', 'ぼ']
 var paHiragana =    ['pa', 'ぱ', 'pi', 'ぴ', 'pu', 'ぷ', 'pe', 'ぺ', 'po', 'ぽ']
 
-// Initializes objects containing hiragana and associated romaji
+// Initializes lists containing hiragana and associated romaji
 var aKatakana =     ['a', 'ア', 'i', 'イ', 'u', 'ウ', 'e', 'エ', 'o', 'オ']
 var kaKatakana =    ['ka', 'カ', 'ki', 'キ', 'ku', 'ク', 'ke', 'ケ', 'ko', 'コ']
 var saKatakana =    ['sa', 'サ', 'shi', 'シ', 'su', 'ス', 'se', 'セ', 'so', 'ソ']
