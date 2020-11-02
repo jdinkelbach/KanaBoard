@@ -1,5 +1,5 @@
 # KanaBoard
-<p><a href="url"><img src="https://github.com/jdinkelbach/KanaBoard/blob/master/img/KanaBordScreenshot.JPG" height="500" width="600" ></a></img>
+<p><a href="url"><img src="https://github.com/jdinkelbach/KanaBoard/blob/master/img/KanaBordScreenshot.JPG" height="450" width="600" ></a></img>
 <h1>Table of Contents</h1>
   <ul>
   <li><a href="#about">About The Project</a></li>
