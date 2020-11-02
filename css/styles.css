@@ -27,15 +27,13 @@ header{
 }
 
 body {
-    background-color: white;
-    font-family: Montserrat;
+    background-color: whitesmoke;
     font-size: medium;
 }
 
 .brand {
     white-space: nowrap;
     margin: auto;
-    font-family: 'Roboto Mono', monospace;
     padding: 4% 0;
     letter-spacing: .3rem;
     display: inline;
@@ -59,9 +57,8 @@ body {
 .tab-pane{
     color: black;
     background-color: white;
-    border-radius: 15px;
+    border-radius: 10px;
     text-align: center;
-    font-family: Montserrat;
 }
 
 .navbar{
@@ -84,8 +81,6 @@ body {
 .nav-link{
     padding: .5rem;
     width: 100%;
-    font-family: 'Roboto Mono', monospace;
-    text-transform: uppercase;
     font-weight: 700;
     color: white;
     display: block;
@@ -99,7 +94,7 @@ body {
 }
 
 .instructions{
-    font-size: 1.5rem;
+    font-size: 1.5em;
     padding: 5% 1%;
     line-height: 2;
 }
@@ -111,18 +106,18 @@ h2{
 
 .exampleCard{
     padding-top: 1rem;
-    height: 100px;
-    width: 100px;
+    height: 75px;
+    width: 75px;
     display: inline-block;
     font-size: x-large;
     border-radius: 10%;
     text-align: center;
-    margin: 5%;
+    margin: 1%;
     font-weight: 700;
     color: black;
-    -webkit-box-shadow: 0px 0px 6px 0px rgba(50, 50, 50, 0.3);
-    -moz-box-shadow:    0px 0px 6px 0px rgba(50, 50, 50, 0.3);
-    box-shadow:         0px 0px 6px 0px rgba(50, 50, 50, 0.3);
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(50, 50, 50, 0.2);
+    -moz-box-shadow:    0px 0px 3px 0px rgba(50, 50, 50, 0.2);
+    box-shadow:         0px 0px 3px 0px rgba(50, 50, 50, 0.2);
 }
 
 .container-scroll{
@@ -161,8 +156,22 @@ h2{
 /* Large devices (laptops/desktops, 768px and up) */
 @media only screen and (min-width: 768px) {
     
+    #game{
+        background-color: white;
+        border-radius: 10px;
+        overflow: hidden;
+        width: 70%;
+        margin: auto;
+        -webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.1);
+        -moz-box-shadow:    0px 0px 5px 0px rgba(50, 50, 50, 0.1);
+        box-shadow:         0px 0px 5px 0px rgba(50, 50, 50, 0.1);
+    }
+
     body{
-        background-color: whitesmoke;
+        margin: 4% auto;
+        background-color: #f5f5f5;
+        background-color: #f5f5f5;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23ffffff' fill-opacity='0.5' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
     }
     
     .card-container{
@@ -173,20 +182,31 @@ h2{
         ". . . . . . . . . ."
         ". . . . . . . . . ."
         ". . . . . . . . . .";
+        padding: 0 2%;
     }
 
     header{
         display: block;
-        background: url(../img/headerBackground.png);
-        background-repeat: round;
+        overflow: hidden;
+        height: 100px;
+    }
+
+    #brand-circle{
+        background-color: #b0313f;
+        border-top-left-radius: 100%;
+        border-top-right-radius: 100%;
+        border-radius: 100%;
+        width: 1000px;
+        height: 1000px;
+        margin: auto;
     }
 
     .brand {
         letter-spacing: 5;
         display: block;
         white-space: normal;
-        font-size: 3rem;
-        padding: 1.5%;
+        font-size: 2em;
+        margin: auto;
     }
 
     .navbar{
@@ -203,44 +223,42 @@ h2{
     }
 
     .nav-tabs{
-        padding: .8%;
+        padding: .5%;
         width: 100%
     }
 
     .nav-link{
         display: inline;
-        border-radius: 10%;
-        padding: .3rem;
-        border-radius: 10%;
+        border-radius: 5px;
+        padding: 5%;
+        border: none;
     }
 
     .nav-link:hover{
-        background-color: whitesmoke;
+        background-color: white;
         color:  #b0313f!important;
-        border: none;
     }
 
     .nav-link.active{
         color:  black!important;
         background-color: white!important;
-        border-bottom: none;
     }
 
-    .tab-pane{
-        margin-top: 2%;
-        -webkit-box-shadow: 0px 0px 6px 0px rgba(50, 50, 50, 0.15);
-        -moz-box-shadow:    0px 0px 6px 0px rgba(50, 50, 50, 0.15);
-        box-shadow:         0px 0px 6px 0px rgba(50, 50, 50, 0.15);
+    .romaji{
+        font-size: medium;
+    }
+
+    .kana-character{
+        font-size: large;
     }
 
     .instructions{
-        font-size: 1.5rem;
-        line-height: 4rem;
+        line-height: 2;
         padding: 2%;
     }
 
     .row{
-        min-height: 2%;
+        min-height: 1.5%;
     }
     
     .kana-cell > .romaji{
@@ -249,7 +267,7 @@ h2{
 
     .container-scroll{
         overflow: hidden;
-        padding: 5% 0 10%;
+        padding: 3% 0;
     }
     
     .container-scroll > .row {
@@ -268,7 +286,6 @@ h2{
 }
 
 .btn{
-    text-transform: uppercase;
     font-weight: 700;
     margin: 0 .5rem;
 }
@@ -284,12 +301,12 @@ h2{
 }
 
 #info{
-    padding: 2.5% 1%;
+    padding: 2%;
 }
 
 #score{
     font-weight: 400;
-    font-size: x-large;
+    font-size: large;
 }
 
 #playInfo{
@@ -301,7 +318,7 @@ h2{
 } 
 
 #againBtn{
-    margin: 15% 0 5%; 
+    margin: 5%;
 }
 
 .card {
@@ -316,9 +333,9 @@ h2{
     border: none;
     border: 4px solid white; 
     color: black;
-    -webkit-box-shadow: 0px 0px 6px 0px rgba(50, 50, 50, 0.5);
-    -moz-box-shadow:    0px 0px 6px 0px rgba(50, 50, 50, 0.5);
-    box-shadow:         0px 0px 6px 0px rgba(50, 50, 50, 0.5);
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(50, 50, 50, 0.25);
+    -moz-box-shadow:    0px 0px 6px 0px rgba(50, 50, 50, 0.25);
+    box-shadow:         0px 0px 6px 0px rgba(50, 50, 50, 0.25);
 }
 
 .card:after {
@@ -340,9 +357,9 @@ h2{
 }
 
 .navbar{
-    -webkit-box-shadow: 0 8px 6px -6px #999;
-    -moz-box-shadow: 0 8px 6px -6px #999;
-    box-shadow: 0 8px 6px -6px #999;
+    -webkit-box-shadow: 0 8px 6px -6px lightgray;
+    -moz-box-shadow: 0 8px 6px -6px lightgray;
+    box-shadow: 0 8px 6px -6px lightgray;
 }
 
 .removed{
