@@ -29,6 +29,7 @@ header{
 body {
     background-color: whitesmoke;
     font-size: medium;
+    overflow: hidden;
 }
 
 .brand {
